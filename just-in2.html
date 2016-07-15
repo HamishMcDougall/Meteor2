@@ -1,0 +1,22 @@
+<body>
+<!--
+ {{#each people}}
+ <li> {{name}} is {{age}} years old </li>
+ {{/each}}
+-->
+
+{{>profile}}
+
+
+
+</body>
+
+<template name="profile">
+
+    {{#with info}}
+      {{Name}}<br />
+      {{Age}}<br />
+      {{Location}}<br />
+    {{/with}}
+
+</template>
